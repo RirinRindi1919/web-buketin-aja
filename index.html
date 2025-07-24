@@ -1,0 +1,419 @@
+<html class="scroll-smooth" lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Buketin Aja - Toko Online Buket</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-pink-50 text-pink-900">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <a class="flex items-center space-x-2" href="#">
+            <img
+              alt="Logo Buketin Aja, huruf BA berwarna pink lembut dan putih"
+              class="h-10 w-10 rounded-full"
+              height="40"
+              src="img/logo.jpg"
+              width="40"
+            />
+            <span class="text-2xl font-semibold text-pink-600">
+              Buketin Aja
+            </span>
+          </a>
+          <div class="hidden md:flex space-x-8 font-medium text-pink-700">
+            <a class="hover:text-pink-500 transition" href="#home"> Beranda </a>
+            <a class="hover:text-pink-500 transition" href="#categories">
+              Kategori
+            </a>
+            <a class="hover:text-pink-500 transition" href="#about">
+              Tentang Kami
+            </a>
+            <a class="hover:text-pink-500 transition" href="#contact">
+              Kontak
+            </a>
+          </div>
+          <div class="md:hidden">
+            <button
+              aria-label="Toggle menu"
+              class="focus:outline-none"
+              id="menu-btn"
+            >
+              <i class="fas fa-bars text-2xl text-pink-700"> </i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hidden md:hidden bg-white shadow-md" id="mobile-menu">
+        <a
+          class="block px-4 py-3 border-b border-pink-200 hover:bg-pink-100 text-pink-700 font-medium"
+          href="#home"
+        >
+          Beranda
+        </a>
+        <a
+          class="block px-4 py-3 border-b border-pink-200 hover:bg-pink-100 text-pink-700 font-medium"
+          href="#categories"
+        >
+          Kategori
+        </a>
+        <a
+          class="block px-4 py-3 border-b border-pink-200 hover:bg-pink-100 text-pink-700 font-medium"
+          href="#about"
+        >
+          Tentang Kami
+        </a>
+        <a
+          class="block px-4 py-3 hover:bg-pink-100 text-pink-700 font-medium"
+          href="#contact"
+        >
+          Kontak
+        </a>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section
+      class="pt-24 bg-gradient-to-r from-pink-300 to-pink-400 text-white"
+      id="home"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-20 flex flex-col-reverse md:flex-row items-center gap-12"
+      >
+        <div class="md:w-1/2 text-center md:text-left">
+          <h1
+            class="text-4xl sm:text-5xl font-extrabold leading-tight mb-4 drop-shadow-md"
+          >
+            Buketin Aja
+            <br />
+            Toko Online Buket
+          </h1>
+          <p class="text-lg sm:text-xl mb-8 opacity-90 drop-shadow-sm">
+            Pilih dan kirim buket bunga, snack, uang, atau custom sesuai
+            keinginanmu dengan mudah dan cepat.
+          </p>
+          <a
+            class="inline-block bg-white text-pink-600 font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-pink-100 transition"
+            href="#categories"
+          >
+            Lihat Kategori
+          </a>
+        </div>
+        <div class="md:w-1/2">
+          <img
+            alt="Ilustrasi toko online buket di smartphone dengan latar belakang warna pink lembut"
+            class="rounded-lg shadow-lg mx-auto"
+            height="400"
+            src="img/toko.jpeg"
+            width="600"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Categories Section -->
+    <section class="max-w-7xl mx-auto px-6 py-20" id="categories">
+      <h2 class="text-3xl font-bold text-center text-pink-600 mb-12">
+        Kategori Buket
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <!-- Buket Bunga -->
+        <div
+          class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition"
+        >
+          <img
+            alt="Buket bunga segar berwarna pink, putih, dan merah dengan pita pink lembut di latar putih"
+            class="mb-4 rounded-lg"
+            height="100"
+            src="img/bunga.jpeg"
+            width="100"
+          />
+          <h3 class="text-xl font-semibold mb-2 text-pink-700">Buket Bunga</h3>
+          <p class="text-pink-600">
+            Buket bunga dengan sentuhan cinta untuk ulang tahun, pernikahan,
+            wisuda, atau sekadar menyampaikan rasa. Bikin momenmu lebih
+            bermakna!
+          </p>
+        </div>
+        <!-- Buket Snack -->
+        <div
+          class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition"
+        >
+          <img
+            alt="Buket snack berisi berbagai cemilan dan makanan ringan dikemas cantik dengan pita pink lembut"
+            class="mb-4 rounded-lg"
+            height="100"
+            src="img/snack.jpeg"
+            width="100"
+          />
+          <h3 class="text-xl font-semibold mb-2 text-pink-700">Buket Snack</h3>
+          <p class="text-pink-600">
+            Buket camilan favorit yang bikin siapa pun tersenyum. Cocok buat
+            hadiah kejutan ulang tahun, anniversary, atau teman healing kamu!
+          </p>
+        </div>
+        <!-- Buket Uang -->
+        <div
+          class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition"
+        >
+          <img
+            alt="Buket uang kertas yang disusun rapi dengan pita pink lembut di latar putih"
+            class="mb-4 rounded-lg"
+            height="100"
+            src="img/uang.jpeg"
+            width="100"
+          />
+          <h3 class="text-xl font-semibold mb-2 text-pink-700">Buket Uang</h3>
+          <p class="text-pink-600">
+            Anti boring! Buket uang unik & elegan, pas untuk hadiah ulang tahun,
+            pernikahan, atau reward spesial yang bikin tak terlupakan.
+          </p>
+        </div>
+        <!-- Buket Custom -->
+        <div
+          class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition"
+        >
+          <img
+            alt="Ilustrasi buket custom dengan berbagai barang dan dekorasi sesuai permintaan pelanggan dengan warna pink lembut"
+            class="mb-4 rounded-lg"
+            height="100"
+            src="img/custom.jpeg"
+            width="100"
+          />
+          <h3 class="text-xl font-semibold mb-2 text-pink-700">Buket Custom</h3>
+          <p class="text-pink-600">
+            Bikin buket versi kamu sendiri! Campur bunga, snack, uang, hingga
+            hadiah spesial sesuai selera dan momen yang kamu inginkan.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Featured Products Section -->
+    <section class="max-w-7xl mx-auto px-6 py-20 bg-white rounded-lg shadow-lg">
+      <h2 class="text-3xl font-bold text-pink-600 mb-12 text-center">
+        Produk Pilihan
+      </h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+      >
+        <!-- Buket Bunga 1 -->
+        <div
+          class="bg-pink-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
+        >
+          <img
+            alt="Buket bunga mawar merah muda segar dengan pita putih di latar pink lembut"
+            class="w-full h-48 object-cover"
+            height="300"
+            src="img/buket mini.jpeg"
+            width="400"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-lg mb-2 text-pink-700">
+              Buket Bunga Mini
+            </h3>
+            <p class="text-pink-600 mb-3">
+              Buket mawar mini, simbol cinta dan kelembutan.
+            </p>
+            <div class="font-bold text-pink-600">Rp150.000</div>
+          </div>
+        </div>
+        <!-- Buket Snack 1 -->
+        <div
+          class="bg-pink-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
+        >
+          <img
+            alt="Buket snack mix berisi berbagai cemilan dan minuman ringan dikemas cantik dengan warna pink lembut"
+            class="w-full h-48 object-cover"
+            height="300"
+            src="img/snack mix.jpeg"
+            width="400"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-lg mb-2 text-pink-700">
+              Buket Snack Mix
+            </h3>
+            <p class="text-pink-600 mb-3">
+              Kombinasi snack favorit untuk hadiah yang lezat dan menarik.
+            </p>
+            <div class="font-bold text-pink-600">Rp120.000</div>
+          </div>
+        </div>
+        <!-- Buket Uang 1 -->
+        <div
+          class="bg-pink-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
+        >
+          <img
+            alt="Buket uang kreatif dengan uang kertas disusun rapi dan pita pink lembut"
+            class="w-full h-48 object-cover"
+            height="300"
+            src="img/uang kreatif.jpeg"
+            width="400"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-lg mb-2 text-pink-700">
+              Buket Uang Kreatif
+            </h3>
+            <p class="text-pink-600 mb-3">
+              Hadiah uang yang unik dan elegan untuk berbagai acara.
+            </p>
+            <div class="font-bold text-pink-600">Rp200.000</div>
+          </div>
+        </div>
+        <!-- Buket Custom 1 -->
+        <div
+          class="bg-pink-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
+        >
+          <img
+            alt="Buket custom dengan kombinasi bunga, snack, dan hadiah lain dikemas cantik dengan warna pink lembut"
+            class="w-full h-48 object-cover"
+            height="300"
+            src="img/custom spesial.jpeg"
+            width="400"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-lg mb-2 text-pink-700">
+              Buket Custom Special
+            </h3>
+            <p class="text-pink-600 mb-3">
+              Buat buket sesuai keinginanmu dengan kombinasi unik.
+            </p>
+            <div class="font-bold text-pink-600">Rp250.000</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section class="bg-white py-20 mt-20" id="about">
+      <div
+        class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12"
+      >
+        <div class="md:w-1/2">
+          <img
+            alt="Foto tim Buketin Aja sedang bekerja di kantor modern dengan suasana ceria dan warna pink lembut"
+            class="rounded-lg shadow-lg mx-auto"
+            height="400"
+            src="img/tim.jpeg"
+            width="600"
+          />
+        </div>
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold text-pink-600 mb-6">
+            Tentang Buketin Aja
+          </h2>
+          <p class="text-pink-700 mb-4 leading-relaxed">
+            Buketin Aja adalah toko online spesialis buket yang menyediakan
+            berbagai pilihan buket bunga, snack, uang, dan custom sesuai
+            kebutuhanmu. Kami berkomitmen memberikan produk berkualitas dengan
+            pelayanan cepat dan ramah.
+          </p>
+          <p class="text-pink-700 leading-relaxed">
+            Dengan pengalaman dan tim profesional, kami siap membantu kamu
+            memberikan hadiah terbaik untuk orang tersayang.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section
+      class="max-w-7xl mx-auto px-6 py-20 bg-pink-50 rounded-t-3xl mt-20"
+      id="contact"
+    >
+      <h2 class="text-3xl font-bold text-center text-pink-600 mb-12">
+        Hubungi Kami
+      </h2>
+      <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8">
+        <form action="#" class="space-y-6" method="POST">
+          <div>
+            <label class="block text-pink-700 font-semibold mb-2" for="name">
+              Nama
+            </label>
+            <input
+              class="w-full border border-pink-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-400"
+              id="name"
+              name="name"
+              placeholder="Masukkan nama lengkap"
+              required=""
+              type="text"
+            />
+          </div>
+          <div>
+            <label class="block text-pink-700 font-semibold mb-2" for="email">
+              Email
+            </label>
+            <input
+              class="w-full border border-pink-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-400"
+              id="email"
+              name="email"
+              placeholder="Masukkan email aktif"
+              required=""
+              type="email"
+            />
+          </div>
+          <div>
+            <label class="block text-pink-700 font-semibold mb-2" for="message">
+              Pesan
+            </label>
+            <textarea
+              class="w-full border border-pink-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-400"
+              id="message"
+              name="message"
+              placeholder="Tulis pesan atau pertanyaan kamu"
+              required=""
+              rows="4"
+            ></textarea>
+          </div>
+          <button
+            class="w-full bg-pink-600 text-white font-semibold py-3 rounded-md hover:bg-pink-700 transition"
+            type="submit"
+          >
+            Kirim Pesan
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-white border-t border-pink-200 mt-20">
+      <div
+        class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center text-pink-600 text-sm"
+      >
+        <p>© 2025 Buketin Aja. Semua hak cipta dilindungi.</p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <a
+            aria-label="Facebook"
+            class="hover:text-pink-500 transition"
+            href="https://www.facebook.com/share/169uewJseo/"
+          >
+            <i class="fab fa-facebook-f"> </i>
+          </a>
+          <a
+            aria-label="Instagram"
+            class="hover:text-pink-500 transition"
+            href="https://www.instagram.com/buketin_aja25/profilecard/?igsh=MXJ4ZGRzNzlxOGpkZw=="
+          >
+            <i class="fab fa-instagram"> </i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
